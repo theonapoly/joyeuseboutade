@@ -1,0 +1,19 @@
+/*eslint-disable*/
+
+.navbar-main {
+  position: absolute;
+  background-color: aqua;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+
+  .navbar-logo {
+    z-index: 2;
+    background: none;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+    width: 150px;
+  }
+}
