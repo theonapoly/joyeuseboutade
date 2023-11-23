@@ -20,7 +20,7 @@ function JokeTeam({
         <Global />
         <Limite />
       </div>
-      <div>
+      <div className="TeamJokeButton">
         <button className="Plus" type="button" onClick={handleClickLessPoint}>
           {" "}
           v{" "}

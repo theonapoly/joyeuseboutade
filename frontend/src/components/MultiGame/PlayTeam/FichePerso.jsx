@@ -25,6 +25,7 @@ function FichePerso({ element }) {
   return (
     <div>
       <div className="AllPlayer">
+        <img src={element.svg} alt="Logo" height="50px" />
         <button
           className="ButtonPlayer"
           type="button"
@@ -50,6 +51,7 @@ FichePerso.propTypes = {
   element: PropTypes.shape({
     name: PropTypes.string.isRequired,
     point: PropTypes.number.isRequired,
+    svg: PropTypes.string.isRequired,
   }).isRequired,
 };
 export default FichePerso;

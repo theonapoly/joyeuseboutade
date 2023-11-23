@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Question.scss";
 import un from "../../../assets/svg/un.svg";
 import deux from "../../../assets/svg/deux.svg";
 import trois from "../../../assets/svg/trois.svg";
@@ -52,32 +53,33 @@ function Question() {
   }, [player]);
 
   return (
-    <div>
+    <div className="GlobalStart">
       <input
         value={valeur}
+        className="PseudoButton"
         type="text"
-        placeholder="Enter some text"
+        placeholder="Entre ton Pseudo!"
         onKeyDown={handleChange}
         onChange={(e) => setValeur(e.target.value)}
       />
-      <ul>
+      <ul className="ListeName">
         {playerMap &&
           playerMap.map((elem) => (
-            <li key={elem.id}>
+            <li key={elem.id} className="LiPerso">
               <img src={elem.svg} alt="" height="50px" />
-              <h1>{elem.name}</h1>
+              <h1 className="Pseudo">{elem.name}</h1>
             </li>
           ))}
       </ul>
       <button
+        className="ButtonStartMultigame"
         type="button"
         onClick={() => {
           navigate("/TeamPlayer", { state: { playerMap } });
         }}
       >
-        frr
+        Commence le jeu!
       </button>
-      {/* <Link to="/TeamPlayer">go</Link> */}
     </div>
   );
 }

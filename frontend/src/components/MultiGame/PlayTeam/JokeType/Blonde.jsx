@@ -1,7 +1,14 @@
 /*eslint-disable*/
 import { useEffect, useState } from "react";
+import "./Jokes.scss";
 
 function Blonde() {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClickProfil = () => {
+    setIsClicked(!isClicked);
+  };
+
   const [jokesData, setJokesData] = useState();
 
   const url = ["https://www.blagues-api.fr/api/type/blondes/random"];
@@ -21,11 +28,18 @@ function Blonde() {
     });
   }, []);
   return (
-    <>
-      <div>{jokesData && jokesData.type}</div>
-      <div>{jokesData && jokesData.joke}</div>
-      <div>{jokesData && jokesData.answer}</div>
-    </>
+    <div className="JokesBlock">
+      <button type="button" className="JokesType" onClick={handleClickProfil}>
+        {jokesData && jokesData.type}
+      </button>
+      <div className={isClicked ? "JokesJoke" : "JokesJokeN"}>
+        {jokesData && jokesData.joke}
+      </div>
+
+      <div className={isClicked ? "JokesAnswer" : "JokesAnswerN"}>
+        {jokesData && jokesData.answer}
+      </div>
+    </div>
   );
 }
 export default Blonde;
