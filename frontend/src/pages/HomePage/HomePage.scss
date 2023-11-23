@@ -79,6 +79,7 @@
     font-family: "babyparty", sans-serif;
     font-size: 1rem;
     background: transparent;
+    text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -121,6 +122,10 @@
     }
     &:active {
       top: 2px;
+    }
+    .link-home {
+      text-decoration: none;
+      color: white;
     }
   }
 }

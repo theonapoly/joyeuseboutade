@@ -1,6 +1,7 @@
 /*eslint-disable*/
 
 import "./HomePage.scss";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const handleClickBtn = () => {};
@@ -19,8 +20,9 @@ function HomePage() {
           className="custom-btn btn-14"
           type="button"
           onClick={handleClickBtn}
+          to="/jokerandom"
         >
-          T'as pas une blague ?
+          <Link className="link-home">T'as pas une blague ?</Link>
         </button>
       </div>
     </div>
