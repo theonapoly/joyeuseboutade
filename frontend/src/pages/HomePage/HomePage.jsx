@@ -15,14 +15,16 @@ function HomePage() {
           finis les moments solitude pendant vos fetes
         </p>
       </div>
-      <div>
+      <div className="blur">
         <button
           className="custom-btn btn-14"
           type="button"
           onClick={handleClickBtn}
           to="/jokerandom"
         >
-          <Link className="link-home">T'as pas une blague ?</Link>
+          <Link className="link-home" to="/jokerandom">
+            T'as pas une blague ?
+          </Link>
         </button>
       </div>
     </div>

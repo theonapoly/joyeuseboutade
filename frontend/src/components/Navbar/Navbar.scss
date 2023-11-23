@@ -2,7 +2,6 @@
 
 .navbar-main {
   position: absolute;
-  background-color: aqua;
   height: 150px;
   display: flex;
   flex-direction: row;
@@ -15,5 +14,9 @@
     align-items: end;
     height: 100%;
     width: 150px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
