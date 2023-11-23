@@ -1,14 +1,30 @@
+/*eslint-disable*/
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
+import HomePage from "./pages/HomePage/HomePage";
+
+import TeamMember from "./components/MultiGame/PlayTeam/TeamPlayer";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/",
+
+        element: <HomePage />,
+      },
+      {
+        path: "/TeamMember",
+
+        element: <TeamMember />,
+      },
+    ],
   },
 ]);
 
