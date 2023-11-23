@@ -5,10 +5,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 
+import TeamMember from "./components/MultiGame/PlayTeam/TeamPlayer";
+
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <TeamMember />,
+      },
+    ],
   },
 ]);
 
