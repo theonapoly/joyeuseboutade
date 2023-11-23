@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import JokeTeam from "./TeamJoke";
+import "./FichePerso.scss";
 
 function FichePerso({ element }) {
   const [playerPoint, setPlayerPoint] = useState(element.point);
@@ -23,19 +24,25 @@ function FichePerso({ element }) {
   };
   return (
     <div>
-      <button type="button" onClick={handleClickOpen}>
-        {element.name}
-      </button>
-      <div>{playerPoint}</div>
-      {isOpen ? (
-        <JokeTeam
-          handleClickLessPoint={handleClickLessPoint}
-          handleClickMorePoint={handleClickMorePoint}
-          handleClickClose={handleClickClose}
-        />
-      ) : (
-        ""
-      )}
+      <div className="AllPlayer">
+        <button
+          className="ButtonPlayer"
+          type="button"
+          onClick={handleClickOpen}
+        >
+          {element.name}
+        </button>
+        <div className="PointPlayer">{playerPoint}</div>
+        {isOpen ? (
+          <JokeTeam
+            handleClickLessPoint={handleClickLessPoint}
+            handleClickMorePoint={handleClickMorePoint}
+            handleClickClose={handleClickClose}
+          />
+        ) : (
+          ""
+        )}
+      </div>
     </div>
   );
 }
