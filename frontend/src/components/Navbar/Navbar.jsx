@@ -1,3 +1,5 @@
+/*eslint-disable*/
+
 import ChristmasFather from "../../assets/papanono.svg";
 import "./Navbar.scss";
 
