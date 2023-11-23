@@ -1,5 +1,10 @@
 import "./TeamJoke.scss";
 import PropTypes from "prop-types";
+import Blonde from "./JokeType/Blonde";
+import Beauf from "./JokeType/Beauf";
+import Dev from "./JokeType/Dev";
+import Global from "./JokeType/Global";
+import Limite from "./JokeType/Limite";
 
 function JokeTeam({
   handleClickLessPoint,
@@ -9,10 +14,11 @@ function JokeTeam({
   return (
     <div className="QuestionTeam">
       <div className="TypeQuestion">
-        <div>Blonde</div>
-        <div>Limite</div>
-        <div>Dark</div>
-        <div>global</div>
+        <Blonde />
+        <Beauf />
+        <Dev />
+        <Global />
+        <Limite />
       </div>
       <div>
         <button className="Plus" type="button" onClick={handleClickLessPoint}>

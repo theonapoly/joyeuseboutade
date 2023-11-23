@@ -1,9 +1,12 @@
+import { useLocation } from "react-router-dom";
 import FichePerso from "./FichePerso";
-import Tableau from "./DebutTeste";
+
 import "./TeamPlayer.scss";
 
 function TeamMember() {
-  const array = Tableau();
+  const location = useLocation();
+
+  const array = location.state.playerMap;
 
   const Personne = array.map((element, index) => {
     return { ...element, index, point: 0 };
