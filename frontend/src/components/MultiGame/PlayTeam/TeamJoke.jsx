@@ -18,7 +18,6 @@ function JokeTeam({
         <Blonde />
         <Global />
         <Dev />
-
         <Global />
       </div>
       <div className="TeamJokeButton">
@@ -33,7 +32,7 @@ function JokeTeam({
             type="button"
             onClick={handleClickMorePoint}
           >
-            X
+            x
           </button>
         </div>
         <button

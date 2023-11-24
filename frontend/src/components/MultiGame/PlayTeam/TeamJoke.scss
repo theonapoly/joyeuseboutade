@@ -1,21 +1,30 @@
 .QuestionTeam {
-  z-index: 1;
+  width: 100%;
   position: absolute;
-  background-color: rosybrown;
   top: 0%;
   left: 0%;
-  width: 100%;
+  z-index: 1;
+  background: rgb(207, 15, 180);
+  background: linear-gradient(
+    0deg,
+    rgba(207, 15, 180, 1) 3%,
+    rgba(224, 46, 148, 1) 25%,
+    rgba(228, 46, 154, 1) 45%,
+    rgba(222, 66, 116, 1) 63%,
+    rgba(223, 40, 75, 1) 84%,
+    rgba(199, 38, 38, 1) 100%
+  );
+  padding-top: 25vh;
+  padding-bottom: 10vh;
 
   min-height: 100dvh;
   .Counter {
-    font-size: 2.5rem;
-    font-family: "golga", sans-serif;
+    font-size: 5rem;
+    font-family: "babyparty", sans-serif;
     display: flex;
-
     justify-content: center;
-    font-size: 48px;
-    padding-block: 48px;
-    color: red;
+    padding-block: 1rem;
+    color: white;
   }
 
   .TypeQuestion {
@@ -38,37 +47,47 @@
       gap: 40px;
 
       .Plus {
-        width: 34px;
-        height: 34px;
-        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
         font-family: "golga", sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: greenyellow;
-
-        border: 1px solid black;
+        display: grid;
+        place-items: center;
+        background-color: rgb(9, 188, 0);
+        border: none;
         border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(0.8);
+        }
       }
       .Moins {
-        width: 34px;
-        height: 34px;
-        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
         font-family: "golga", sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: red;
-
-        border: 1px solid black;
+        display: grid;
+        place-items: center;
+        background-color: rgb(188, 0, 0);
+        border: none;
         border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(0.8);
+        }
       }
     }
     .custom-btn {
-      width: 250px;
+      width: 150px;
       height: 50px;
       color: #fff;
-      border-radius: 10px;
+      border-radius: 30px;
       padding: 10px 25px;
       font-family: "babyparty", sans-serif;
       font-size: 1rem;
@@ -97,7 +116,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        border-radius: 5px;
+        border-radius: 30px;
         background-color: #eaf818;
         background-image: linear-gradient(
           315deg,
@@ -114,7 +133,7 @@
         color: #793131;
       }
       &:hover:after {
-        border-radius: 7px;
+        border-radius: 30px;
         top: auto;
         bottom: 0;
         height: 100%;

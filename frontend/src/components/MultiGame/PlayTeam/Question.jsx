@@ -67,7 +67,7 @@ function Question() {
         value={valeur}
         className="PseudoButton"
         type="text"
-        placeholder="Entre ton Pseudo!"
+        placeholder="Entre ton Pseudo !"
         onKeyDown={handleChange}
         onChange={(e) => setValeur(e.target.value)}
       />
