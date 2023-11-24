@@ -63,10 +63,10 @@ function PlayerInput({ selectedTheme }) {
 
   const handleClick = () => {
     if (!selectedTheme) {
-      alert("veye shuasir term");
+      alert("Choisir le thème");
     }
     if (playerMap.length < 2) {
-      alert("veye shuasir player");
+      alert("minimum deux joueurs");
     }
     if (selectedTheme && playerMap.length > 1) {
       setLancez(true);

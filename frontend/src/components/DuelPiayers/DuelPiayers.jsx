@@ -98,11 +98,15 @@ function DuelPiayers({ selectedTheme, playerMap }) {
       <br />
       <h1>{joke.answer}</h1>
       <div className="buton">
-        <button type="button" onClick={() => setMotor(motor + 1)}>
-          +
+        <button
+          className="plus"
+          type="button"
+          onClick={() => setMotor(motor + 1)}
+        >
+          v
         </button>
-        <button type="button" onClick={handleClick}>
-          -
+        <button className="moins" type="button" onClick={handleClick}>
+          x
         </button>
       </div>
     </div>
