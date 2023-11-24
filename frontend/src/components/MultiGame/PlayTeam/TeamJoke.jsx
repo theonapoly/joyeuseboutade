@@ -35,7 +35,11 @@ function JokeTeam({
             X
           </button>
         </div>
-        <button className="GO" type="button" onClick={handleClickClose}>
+        <button
+          className="custom-btn btn-14"
+          type="button"
+          onClick={handleClickClose}
+        >
           Suivant
         </button>
       </div>

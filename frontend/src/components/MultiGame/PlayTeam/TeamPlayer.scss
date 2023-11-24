@@ -8,8 +8,16 @@
     position: absolute;
     left: 45%;
     top: 20px;
-    font-size: 36px;
+    font-family: "golga", sans-serif;
+    font-size: 3rem;
 
     text-align: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .AllGame {
+    .TextePlayer {
+      font-size: clamp(40px, 3dvw, 80px);
+    }
   }
 }
