@@ -75,13 +75,13 @@ function Question() {
         {playerMap &&
           playerMap.map((elem) => (
             <li key={elem.id} className="LiPerso">
-              <img src={elem.svg} alt="" height="50px" />
+              <img src={elem.svg} alt="" />
               <h1 className="Pseudo">{elem.name}</h1>
             </li>
           ))}
       </ul>
       <button
-        className="ButtonStartMultigame"
+        className="custom-btn btn-14"
         type="button"
         onClick={() => {
           navigate("/TeamPlayer", { state: { playerMap } });

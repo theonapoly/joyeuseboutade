@@ -29,7 +29,7 @@ function Dev() {
   return (
     <div className="JokesBlock">
       <button type="button" className="JokesType" onClick={handleClickProfil}>
-        {jokesData && jokesData.type}
+        Dev
       </button>
       <div className={isClicked ? "JokesJoke" : "JokesJokeN"}>
         {jokesData && jokesData.joke}

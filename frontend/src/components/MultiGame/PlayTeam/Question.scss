@@ -1,22 +1,118 @@
 .GlobalStart {
   background-color: mediumorchid;
   padding-top: 150px;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-inline: 24px;
   .Rules {
     padding: 16px;
+    font-size: 1.5rem;
+    font-family: "golga", sans-serif;
+  }
+  .PseudoButton {
+    font-size: 1.5rem;
+    font-family: "golga", sans-serif;
+    margin-block: 16px;
   }
   .ListeName {
     .LiPerso {
       margin: 16px;
       display: flex;
       gap: 16px;
+      img {
+        width: 50px;
+      }
+
       .Pseudo {
         display: flex;
-        font-size: 24px;
+        font-family: "babyparty", sans-serif;
+        font-size: 1.5rem;
         align-items: center;
+      }
+    }
+  }
+  .custom-btn {
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-family: "babyparty", sans-serif;
+    font-size: 1rem;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    // box-shadow:
+    //   inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    //   7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    //   4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  .btn-14 {
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    z-index: 1;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 5px;
+      background-color: #eaf818;
+      background-image: linear-gradient(
+        315deg,
+        #e9f80b 0%,
+        rgb(223, 216, 85) 74%
+      );
+      box-shadow:
+        inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      color: #793131;
+    }
+    &:hover:after {
+      border-radius: 7px;
+      top: auto;
+      bottom: 0;
+      height: 100%;
+    }
+    &:active {
+      top: 2px;
+    }
+    .link-home {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: #793131;
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  .GlobalStart {
+    .Rules {
+      font-size: clamp(30px, 2dvw, 80px);
+    }
+    .ListeName {
+      .LiPerso {
+        img {
+          width: clamp(50px, 8dvw, 300px);
+        }
+        .Pseudo {
+          font-size: clamp(30px, 3dvw, 80px);
+        }
       }
     }
   }
