@@ -9,7 +9,7 @@ import Duel from "./components/Duel";
 function App() {
   return (
     <div className="main-container-app">
-      {/* <Navbar /> */}
+      <Navbar /> 
       <main>
         <Outlet />
       </main>
