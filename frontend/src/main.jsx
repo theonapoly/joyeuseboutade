@@ -8,7 +8,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import HomePage from "./pages/HomePage/HomePage";
 import Duel from "./components/Duel";
-import TeamMember from "./components/MultiGame/PlayTeam/TeamPlayer";
+import Question from "./components/MultiGame/PlayTeam/Question";
+import TeamPlayer from "./components/MultiGame/PlayTeam/TeamPlayer";
+
+import JokeRandom from "./pages/JokeRandom/JokeRandom";
 
 const router = createBrowserRouter([
   {
@@ -20,9 +23,18 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
+        path: "/jokerandom",
+        element: <JokeRandom />,
+      },
+      {
         path: "/TeamMember",
 
-        element: <TeamMember />,
+        element: <Question />,
+      },
+      {
+        path: "/TeamPlayer",
+
+        element: <TeamPlayer />,
       },
       {
         path: "/Duel",

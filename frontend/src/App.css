@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "golga";
+  src: url("./assets/fonts/Golga.ttf");
+}
+
+@font-face {
+  font-family: "neonblitz";
+  src: url("./assets/fonts/Neonblitz.ttf");
+}
+
+@font-face {
+  font-family: "neonsans";
+  src: url("./assets/fonts/NeonSans.ttf");
+}
+
+@font-face {
+  font-family: "babyparty";
+  src: url("./assets/fonts/Baby\ Party.ttf");
+}
+
+@font-face {
+  font-family: "learner";
+  src: url("./assets/fonts/Letters\ for\ Learners.ttf");
+}
+
 *,
 *::before,
 *::after {

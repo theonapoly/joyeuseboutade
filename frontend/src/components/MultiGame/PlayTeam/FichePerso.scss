@@ -1,0 +1,20 @@
+.AllPlayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 36px;
+  .ButtonPlayer {
+    max-width: 100px;
+    font-size: 24px;
+    border-radius: 12px;
+  }
+  .PointPlayer {
+    font-size: 24px;
+    border: 1px solid black;
+    padding: 8px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    border-color: rgb(230, 26, 141);
+  }
+}
