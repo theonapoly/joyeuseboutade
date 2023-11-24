@@ -30,7 +30,7 @@ function Blonde() {
   return (
     <div className="JokesBlock">
       <button type="button" className="JokesType" onClick={handleClickProfil}>
-        {jokesData && jokesData.type}
+        Blondes
       </button>
       <div className={isClicked ? "JokesJoke" : "JokesJokeN"}>
         {jokesData && jokesData.joke}

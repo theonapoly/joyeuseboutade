@@ -25,9 +25,9 @@ function FichePerso({ element }) {
   return (
     <div>
       <div className="AllPlayer">
-        <img src={element.svg} alt="Logo" height="50px" />
+        <img src={element.svg} alt="Logo" />
         <button
-          className="ButtonPlayer"
+          className="custom-btn btn-14"
           type="button"
           onClick={handleClickOpen}
         >
