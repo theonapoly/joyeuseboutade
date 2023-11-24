@@ -3,22 +3,14 @@ import PlayerInput from "./PlayerInput/PlayerInput";
 
 function Duel() {
   const [selectedTheme, setSelectedTheme] = useState("");
-  const catygory = [
-    "all",
-    "global",
-    "dev",
-    "dark",
-    "limit",
-    "beauf",
-    "blondes",
-  ];
+  const catygory = ["global", "dev", "blondes"];
 
   return (
     <div className="Duel">
       <form>
         <fieldset>
           <div className="duelTitr">
-            <h1>choisir le thème</h1>
+            <h1>Choisit ton thème</h1>
           </div>
 
           <div className="categorie">
@@ -41,6 +33,11 @@ function Duel() {
       </form>
 
       <h1 className="regle">Règle de jeux</h1>
+      <h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis porro
+        consequuntur possimus fugiat quos omnis exercitationem laboriosam in at
+        animi.
+      </h3>
 
       <br />
       <br />

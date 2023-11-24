@@ -83,12 +83,20 @@ function DuelPiayers({ selectedTheme, playerMap }) {
       </ul>
       <div className="deux-joueurs">
         <div>
-          <h1> je pose la question</h1>
-          <img src={playerMap[player1].svg} alt="svg" />
+          <h1>Je pose une question</h1>
+          <img
+            className="deux-joueurs-img"
+            src={playerMap[player1].svg}
+            alt="svg"
+          />
         </div>
         <div>
-          <h1> j'essaye de ne pas rire comme ça</h1>{" "}
-          <img src={playerMap[player2].svg} alt="svg" />
+          <h1>J'essaye de ne pas rire</h1>
+          <img
+            className="deux-joueurs-img"
+            src={playerMap[player2].svg}
+            alt="svg"
+          />
         </div>
       </div>
       <br />
@@ -98,11 +106,15 @@ function DuelPiayers({ selectedTheme, playerMap }) {
       <br />
       <h1>{joke.answer}</h1>
       <div className="buton">
-        <button type="button" onClick={() => setMotor(motor + 1)}>
-          +
+        <button
+          className="plus"
+          type="button"
+          onClick={() => setMotor(motor + 1)}
+        >
+          v
         </button>
-        <button type="button" onClick={handleClick}>
-          -
+        <button className="moins" type="button" onClick={handleClick}>
+          x
         </button>
       </div>
     </div>
