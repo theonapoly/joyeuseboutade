@@ -114,6 +114,7 @@
     display: grid;
     place-items: center;
     outline: none;
+    backdrop-filter: blur(10px);
   }
   .btn-14 {
     background: transparent;
@@ -129,12 +130,13 @@
       left: 0;
       z-index: -1;
       border-radius: 5px;
-      background-color: #eaf818;
+
       background-image: linear-gradient(
         315deg,
-        rgba(164, 65, 16, 0.646) 0%,
-        rgba(164, 65, 16, 0.496) 74%
+        rgba(164, 65, 16, 0.812) 0%,
+        rgba(164, 65, 16, 0.714) 74%
       );
+
       transition: all 0.3s ease-in-out;
     }
     &:hover {
