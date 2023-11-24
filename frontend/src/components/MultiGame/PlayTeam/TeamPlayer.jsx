@@ -14,7 +14,7 @@ function TeamMember() {
 
   return (
     <div className="AllGame">
-      <div className="TextePlayer">Et c'est partie pour la Rigolade!</div>
+      <div className="TextePlayer">Et c'est parti pour la rigolade</div>
       <div className="FichePerso">
         {Personne.map((element) => {
           return <FichePerso key={element.index} element={element} />;
