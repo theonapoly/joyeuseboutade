@@ -1,0 +1,15 @@
+.AllGame {
+  background-color: purple;
+  width: 100%;
+
+  min-height: 100dvh;
+  padding-top: 150px;
+  .TextePlayer {
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    font-size: 36px;
+
+    text-align: center;
+  }
+}
