@@ -16,8 +16,9 @@ function JokeTeam({
       <div className="Counter">{playerPoint}</div>
       <div className="TypeQuestion">
         <Blonde />
-        <Dev />
         <Global />
+        <Dev />
+
         <Global />
       </div>
       <div className="TeamJokeButton">
