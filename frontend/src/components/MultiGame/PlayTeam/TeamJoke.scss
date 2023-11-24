@@ -20,7 +20,7 @@
   min-height: 100dvh;
   .Counter {
     font-size: 5rem;
-    font-family: "golga", sans-serif;
+    font-family: "babyparty", sans-serif;
     display: flex;
     justify-content: center;
     padding-block: 1rem;
@@ -116,7 +116,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        border-radius: 5px;
+        border-radius: 30px;
         background-color: #eaf818;
         background-image: linear-gradient(
           315deg,
@@ -133,7 +133,7 @@
         color: #793131;
       }
       &:hover:after {
-        border-radius: 7px;
+        border-radius: 30px;
         top: auto;
         bottom: 0;
         height: 100%;

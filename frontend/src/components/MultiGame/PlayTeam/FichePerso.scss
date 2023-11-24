@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
   margin: 36px;
   img {
-    width: 50px;
+    width: 70px;
   }
 
   .custom-btn {
@@ -15,7 +15,7 @@
     border-radius: 10px;
     padding: 10px 25px;
     font-family: "babyparty", sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background: transparent;
     text-align: center;
     cursor: pointer;
@@ -75,24 +75,26 @@
     }
   }
   .PointPlayer {
-    font-family: "golga", sans-serif;
-    font-size: 1.5rem;
-
+    font-family: "babyparty", sans-serif;
+    font-size: 2rem;
+    width: 80px;
+    height: 45px;
     border: 1px solid black;
-    padding: 8px;
+    padding: 4px;
     background-color: aliceblue;
     border-radius: 50%;
     border-color: rgb(230, 26, 141);
+    text-align: center;
   }
 }
 @media screen and (min-width: 480px) {
   .AllPlayer {
     img {
-      width: clamp(50px, 8dvw, 300px);
+      width: clamp(70px, 8dvw, 300px);
     }
     .custom-btn {
       width: auto;
-      font-size: 50px;
+      font-size: clamp(10px, 1.5rem, 50px);
       height: auto;
       color: #fff;
       border-radius: 10px;
@@ -105,6 +107,7 @@
       transition: all 0.3s ease;
       position: relative;
       display: inline-block;
+      padding-inline: 35px;
       // box-shadow:
       //   inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
       //   7px 7px 20px 0px rgba(0, 0, 0, 0.1),
@@ -116,7 +119,8 @@
       border: 2px solid white;
       cursor: pointer;
       z-index: 0;
-      font-size: 50px;
+      font-size: clamp(20px, 2rem, 50px);
+
       &:after {
         position: absolute;
         content: "";
@@ -159,8 +163,9 @@
       }
     }
     .PointPlayer {
-      font-family: "golga", sans-serif;
-      min-width: 65px;
+      font-family: "babyparty", sans-serif;
+      min-width: 60px;
+      min-height: 65px;
       font-size: 3rem;
       border: 1px solid rgb(36, 26, 230);
       padding: 8px;
