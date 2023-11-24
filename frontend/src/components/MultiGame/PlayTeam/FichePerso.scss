@@ -1,0 +1,177 @@
+.AllPlayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 36px;
+  img {
+    width: 70px;
+  }
+
+  .custom-btn {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-family: "babyparty", sans-serif;
+    font-size: 1.5rem;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    // box-shadow:
+    //   inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    //   7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    //   4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  .btn-14 {
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    z-index: 0;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 5px;
+      background-color: #eaf818;
+      background-image: linear-gradient(
+        315deg,
+        #e9f80b 0%,
+        rgb(223, 216, 85) 74%
+      );
+      box-shadow:
+        inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      color: #793131;
+    }
+    &:hover:after {
+      border-radius: 7px;
+      top: auto;
+      bottom: 0;
+      height: 100%;
+    }
+    &:active {
+      top: 2px;
+    }
+    .link-home {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: #793131;
+      }
+    }
+  }
+  .PointPlayer {
+    font-family: "babyparty", sans-serif;
+    font-size: 2rem;
+    width: 80px;
+    height: 45px;
+    border: 1px solid black;
+    padding: 4px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    border-color: rgb(230, 26, 141);
+    text-align: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .AllPlayer {
+    img {
+      width: clamp(70px, 8dvw, 300px);
+    }
+    .custom-btn {
+      width: auto;
+      font-size: clamp(10px, 1.5rem, 50px);
+      height: auto;
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 25px;
+      font-family: "babyparty", sans-serif;
+      font-size: 1rem;
+      background: transparent;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      padding-inline: 35px;
+      // box-shadow:
+      //   inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      //   7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+      //   4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      outline: none;
+    }
+    .btn-14 {
+      background: transparent;
+      border: 2px solid white;
+      cursor: pointer;
+      z-index: 0;
+      font-size: clamp(20px, 2rem, 50px);
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 5px;
+        background-color: #eaf818;
+        background-image: linear-gradient(
+          315deg,
+          #e9f80b 0%,
+          rgb(223, 216, 85) 74%
+        );
+        box-shadow:
+          inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        color: #793131;
+      }
+      &:hover:after {
+        border-radius: 7px;
+        top: auto;
+        bottom: 0;
+        height: 100%;
+      }
+      &:active {
+        top: 2px;
+      }
+      .link-home {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: #793131;
+        }
+      }
+    }
+    .PointPlayer {
+      font-family: "babyparty", sans-serif;
+      min-width: 60px;
+      min-height: 65px;
+      font-size: 3rem;
+      border: 1px solid rgb(36, 26, 230);
+      padding: 8px;
+      background-color: aliceblue;
+      border-radius: 50%;
+      text-align: center;
+    }
+  }
+}

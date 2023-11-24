@@ -1,0 +1,81 @@
+.JokesBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding-inline: 1.5rem;
+
+  .JokesType {
+    font-size: 3.5rem;
+    font-family: "golga", sans-serif;
+    margin: 4px;
+    width: 230px;
+    border-radius: 15px;
+    border: 3px solid white;
+    background: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(0.8);
+    }
+    color: rgb(21, 19, 19);
+  }
+  .JokesJoke {
+    // text-align: center;
+    font-size: 1.5rem;
+    font-family: "golga", sans-serif;
+    margin: 4px;
+    color: rgb(21, 19, 19);
+  }
+  .JokesJokeN {
+    display: none;
+  }
+  .JokesAnswer {
+    position: relative;
+    right: 0;
+    text-align: right;
+    font-size: 1.5rem;
+    font-family: "learner", sans-serif;
+    margin: 4px;
+    color: rgb(21, 19, 19);
+  }
+  .JokesAnswerN {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .JokesBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px;
+    .JokesType {
+      font-size: clamp(50px, 4dvw, 100px);
+      font-family: "golga", sans-serif;
+      margin: 4px;
+      width: 350px;
+    }
+    .JokesJoke {
+      text-align: center;
+      font-size: clamp(30px, 2dvw, 80px);
+      font-family: "golga", sans-serif;
+      margin: 4px;
+    }
+    .JokesJokeN {
+      display: none;
+    }
+    .JokesAnswer {
+      text-align: center;
+      font-size: clamp(30px, 2dvw, 80px);
+      font-family: "learner", sans-serif;
+
+      margin: 4px;
+    }
+    .JokesAnswerN {
+      display: none;
+    }
+  }
+}

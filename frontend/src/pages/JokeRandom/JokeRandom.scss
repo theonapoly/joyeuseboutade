@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "learner";
+  src: url("../../assets/fonts/Letters\ for\ Learners.ttf");
+}
+
+.main-jokerandom {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15vh;
+  //a voir
+  padding-top: 20vh;
+  align-items: center;
+  background: rgb(238, 160, 30);
+  background: linear-gradient(
+    0deg,
+    rgba(238, 160, 30, 1) 4%,
+    rgba(255, 114, 53, 1) 38%,
+    rgba(244, 9, 81, 1) 70%,
+    rgba(186, 0, 63, 1) 98%
+  );
+  filter: grayscale(40%);
+
+  .section-jokerandom {
+    width: clamp(300px, 80%, 800px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    img {
+      width: 100%;
+      filter: brightness(130%);
+      background-color: rgba(152, 100, 74, 0.454);
+      // border: 3px solid white;
+      border-radius: 50%;
+    }
+    .btn-logo-container {
+      width: 100%;
+      text-align: right;
+      border: none;
+      background: none;
+      padding: none;
+      margin-bottom: 2rem;
+
+      .btn-logo-img {
+        width: 100px;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .mini-game-jokerandom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2rem;
+      h1 {
+        font-family: "babyparty", sans-serif;
+        color: white;
+        font-size: 2rem;
+      }
+
+      .duel-mini-game {
+        width: 200px;
+        border: 3px solid white;
+        border-radius: 15px;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "golga", "sans-serif";
+        color: white;
+        background: rgb(30, 200, 208);
+        background: linear-gradient(
+          90deg,
+          rgba(30, 200, 208, 1) 1%,
+          rgba(106, 168, 247, 1) 13%,
+          rgba(68, 75, 250, 1) 31%,
+          rgba(93, 59, 245, 1) 48%,
+          rgba(118, 26, 246, 1) 63%,
+          rgba(171, 42, 224, 1) 84%,
+          rgba(174, 45, 191, 1) 100%
+        );
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(0.8);
+        }
+      }
+
+      .teamjoke-mini-game {
+        width: 200px;
+        border: 3px solid white;
+        border-radius: 15px;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "golga", "sans-serif";
+        color: white;
+        background: rgb(207, 15, 180);
+        background: linear-gradient(
+          0deg,
+          rgba(207, 15, 180, 1) 3%,
+          rgba(224, 46, 148, 1) 25%,
+          rgba(228, 46, 154, 1) 45%,
+          rgba(222, 66, 116, 1) 63%,
+          rgba(223, 40, 75, 1) 84%,
+          rgba(199, 38, 38, 1) 100%
+        );
+        margin-bottom: 2rem;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(0.8);
+        }
+      }
+    }
+
+    .displayOn {
+      display: flex;
+    }
+
+    .displayOff {
+      display: none;
+    }
+
+    .question-jokerandom {
+      width: 100%;
+      text-align: left;
+      line-height: 3rem;
+      background-color: rgba(164, 65, 16, 0.449);
+      border-radius: 15px;
+      padding: 1rem;
+      font-size: 2.5rem;
+      font-family: "golga", sans-serif;
+      color: white;
+    }
+    .answer-jokerandom {
+      width: 100%;
+      position: relative;
+      right: 0;
+      text-align: right;
+      line-height: 2.5rem;
+      padding: 1rem;
+      font-size: 2.2rem;
+      font-family: "learner", sans-serif;
+      color: white;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1%;
+
+      .custom-btn {
+        width: 200px;
+        height: 50px;
+        color: #fff;
+        border-radius: 10px;
+        padding: 10px 25px;
+        font-family: "golga", sans-serif;
+        font-size: 1.5rem;
+        background: transparent;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: grid;
+        place-items: center;
+        margin-top: 2rem;
+      }
+
+      .btn-jokerandom {
+        background: transparent;
+        border: 2px solid white;
+        cursor: pointer;
+        z-index: 1;
+        &:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 0;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          border-radius: 5px;
+          // background-color: #eaf818;
+          background-image: linear-gradient(
+            315deg,
+            rgba(164, 65, 16, 0.646) 0%,
+            rgba(164, 65, 16, 0.496) 74%
+          );
+
+          transition: all 0.4s ease-in-out;
+        }
+        &:hover {
+          color: white;
+        }
+        &:hover:after {
+          border-radius: 7px;
+          top: auto;
+          bottom: 0;
+          height: 100%;
+        }
+        &:active {
+          top: 2px;
+        }
+      }
+    }
+  }
+}

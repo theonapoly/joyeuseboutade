@@ -1,0 +1,36 @@
+.AllGame {
+  background: rgb(207, 15, 180);
+  background: linear-gradient(
+    0deg,
+    rgba(207, 15, 180, 1) 3%,
+    rgba(224, 46, 148, 1) 25%,
+    rgba(228, 46, 154, 1) 45%,
+    rgba(222, 66, 116, 1) 63%,
+    rgba(223, 40, 75, 1) 84%,
+    rgba(199, 38, 38, 1) 100%
+  );
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding-top: 30vh;
+  min-height: 100dvh;
+  // padding-top: 150px;
+
+  .TextePlayer {
+    width: 70%;
+    font-family: "golga", sans-serif;
+    font-size: clamp(3rem, 6vh + 0.5rem, 10rem);
+    line-height: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+}
+// @media screen and (min-width: 480px) {
+//   .AllGame {
+//     .TextePlayer {
+//       font-size: clamp(40px, 3dvw, 80px);
+//     }
+//   }
+// }

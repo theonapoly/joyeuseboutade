@@ -1,0 +1,257 @@
+.QuestionTeam {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  background: rgb(207, 15, 180);
+  background: linear-gradient(
+    0deg,
+    rgba(207, 15, 180, 1) 3%,
+    rgba(224, 46, 148, 1) 25%,
+    rgba(228, 46, 154, 1) 45%,
+    rgba(222, 66, 116, 1) 63%,
+    rgba(223, 40, 75, 1) 84%,
+    rgba(199, 38, 38, 1) 100%
+  );
+  padding-top: 25vh;
+  padding-bottom: 10vh;
+
+  min-height: 100dvh;
+  .Counter {
+    font-size: 5rem;
+    font-family: "babyparty", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-block: 1rem;
+    color: white;
+  }
+
+  .TypeQuestion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+  }
+  .TeamJokeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 36px;
+    padding: 24px;
+    .ButtonDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+
+      .Plus {
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+        font-family: "golga", sans-serif;
+        display: grid;
+        place-items: center;
+        background-color: rgb(9, 188, 0);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(0.8);
+        }
+      }
+      .Moins {
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+        font-family: "golga", sans-serif;
+        display: grid;
+        place-items: center;
+        background-color: rgb(188, 0, 0);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: scale(0.8);
+        }
+      }
+    }
+    .custom-btn {
+      width: 150px;
+      height: 50px;
+      color: #fff;
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-family: "babyparty", sans-serif;
+      font-size: 1rem;
+      background: transparent;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      // box-shadow:
+      //   inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      //   7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+      //   4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      outline: none;
+    }
+    .btn-14 {
+      background: transparent;
+      border: 2px solid white;
+      cursor: pointer;
+      z-index: 1;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 30px;
+        background-color: #eaf818;
+        background-image: linear-gradient(
+          315deg,
+          #e9f80b 0%,
+          rgb(223, 216, 85) 74%
+        );
+        box-shadow:
+          inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        color: #793131;
+      }
+      &:hover:after {
+        border-radius: 30px;
+        top: auto;
+        bottom: 0;
+        height: 100%;
+      }
+      &:active {
+        top: 2px;
+      }
+      .link-home {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: #793131;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  .QuestionTeam {
+    .Counter {
+      font-size: 4.5rem;
+    }
+    .TeamJokeButton {
+      .ButtonDiv {
+        .Plus {
+          width: 70px;
+          height: 50px;
+          font-size: 1.5rem;
+          font-family: "golga", sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: greenyellow;
+
+          border: 1px solid black;
+          border-radius: 15px;
+        }
+        .Moins {
+          width: 70px;
+          height: 50px;
+          font-size: 1.5rem;
+          font-family: "golga", sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: red;
+
+          border: 1px solid black;
+          border-radius: 15px;
+        }
+      }
+      .custom-btn {
+        width: 450px;
+        height: auto;
+        color: #fff;
+        border-radius: 10px;
+        padding: 10px 25px;
+        font-family: "babyparty", sans-serif;
+        font-size: 1rem;
+        background: transparent;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        // box-shadow:
+        //   inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        //   7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        //   4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+        outline: none;
+      }
+      .btn-14 {
+        background: transparent;
+        border: 2px solid white;
+        cursor: pointer;
+        z-index: 1;
+        font-size: 50px;
+        &:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 0;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          border-radius: 5px;
+          background-color: #eaf818;
+          background-image: linear-gradient(
+            315deg,
+            #e9f80b 0%,
+            rgb(223, 216, 85) 74%
+          );
+          box-shadow:
+            inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+            7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+            4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+        }
+        &:hover {
+          color: #793131;
+        }
+        &:hover:after {
+          border-radius: 7px;
+          top: auto;
+          bottom: 0;
+          height: 100%;
+        }
+        &:active {
+          top: 2px;
+        }
+        .link-home {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            color: #793131;
+          }
+        }
+      }
+    }
+  }
+}

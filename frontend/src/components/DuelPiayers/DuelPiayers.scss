@@ -1,0 +1,126 @@
+.DuelPiayers {
+  h1 {
+    font-size: clamp(1rem, 2vw, 2rem);
+    text-align: center;
+    font-family: "golga";
+  }
+  h3 {
+    font-family: "learner";
+    font-size: clamp(0.6rem, 2.3vw, 2rem);
+    text-align: center;
+  }
+
+  position: absolute;
+  padding-block: 150px;
+  background: rgb(30, 200, 208);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 200, 208, 1) 1%,
+    rgba(106, 168, 247, 1) 13%,
+    rgba(68, 75, 250, 1) 31%,
+    rgba(93, 59, 245, 1) 48%,
+    rgba(118, 26, 246, 1) 63%,
+    rgba(171, 42, 224, 1) 84%,
+    rgba(174, 45, 191, 1) 100%
+  );
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  ul {
+    margin-top: 150px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    li {
+      width: 10%;
+      .live3 {
+        width: 90%;
+        height: 4px;
+        border: 1px solid black;
+        background-color: green;
+      }
+      .live2 {
+        width: 90%;
+        height: 4px;
+        border: 1px solid black;
+        background-color: white;
+
+        .live2-anterieur {
+          width: 60%;
+          height: 4px;
+          border: 1px solid black;
+          background-color: rgb(255, 111, 0);
+        }
+      }
+      .live1 {
+        width: 90%;
+        height: 4px;
+        border: 1px solid black;
+        background-color: white;
+        .live1-anterieur {
+          width: 30%;
+          height: 4px;
+          border: 1px solid black;
+          background-color: rgb(147, 0, 0);
+        }
+      }
+      .live0 {
+        width: 90%;
+        height: 4px;
+        border: 1px solid black;
+        background-color: white;
+      }
+
+      h3 {
+        text-transform: capitalize;
+        text-align: center;
+      }
+    }
+  }
+  .deux-joueurs {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  h1 {
+    text-align: center;
+  }
+  .deux-joueurs-img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .buton {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .plus {
+      width: 24px;
+      height: 24px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: greenyellow;
+
+      border: 1px solid black;
+      border-radius: 50%;
+    }
+    .moins {
+      width: 24px;
+      height: 24px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: red;
+
+      border: 1px solid black;
+      border-radius: 50%;
+    }
+  }
+}
