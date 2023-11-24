@@ -1,0 +1,166 @@
+.main-jokerandom {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
+  //a voir
+  padding-top: 20vh;
+  align-items: center;
+  background: rgb(255, 210, 136);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 210, 136, 1) 2%,
+    rgba(255, 128, 73, 1) 10%,
+    rgba(247, 146, 106, 1) 24%,
+    rgba(255, 107, 27, 1) 36%,
+    rgba(255, 141, 0, 1) 48%,
+    rgba(255, 102, 19, 1) 63%,
+    rgba(255, 0, 78, 1) 84%,
+    rgba(255, 0, 87, 1) 100%
+  );
+  filter: grayscale(40%);
+
+  .section-jokerandom {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    img {
+      width: 100%;
+      filter: brightness(120%);
+    }
+    .btn-logo-container {
+      width: 100%;
+      text-align: right;
+      border: none;
+      background: none;
+      padding: none;
+
+      .btn-logo-img {
+        width: 130px;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .mini-game-jokerandom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2rem;
+
+      .duel-mini-game {
+        width: 200px;
+        border: 1px solid white;
+        border-radius: 15px;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .teamjoke-mini-game {
+        width: 200px;
+        border: 1px solid white;
+        border-radius: 15px;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    .displayOn {
+      display: flex;
+    }
+
+    .displayOff {
+      display: none;
+    }
+
+    .question-jokerandom {
+      width: 100%;
+      text-align: left;
+      line-height: 3rem;
+      background-color: rgb(164, 65, 16);
+      padding: 1rem;
+      font-size: 2.5rem;
+      font-family: "golga", sans-serif;
+      color: white;
+    }
+    .answer-jokerandom {
+      width: 100%;
+      position: relative;
+      right: 0;
+      text-align: right;
+      line-height: 3rem;
+      padding: 1rem;
+      font-size: 2.2rem;
+      font-family: "golga", sans-serif;
+      color: white;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1%;
+
+      .custom-btn {
+        width: 200px;
+        height: 50px;
+        color: #fff;
+        border-radius: 10px;
+        padding: 10px 25px;
+        font-family: "babyparty", sans-serif;
+        font-size: 1rem;
+        background: transparent;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+      }
+      .btn-jokerandom {
+        background: transparent;
+        border: 2px solid white;
+        cursor: pointer;
+        z-index: 1;
+        &:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 0;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          border-radius: 5px;
+          background-color: #eaf818;
+          background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+          box-shadow:
+            inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+            7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+            4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+        }
+        &:hover {
+          color: #793131;
+        }
+        &:hover:after {
+          border-radius: 7px;
+          top: auto;
+          bottom: 0;
+          height: 100%;
+        }
+        &:active {
+          top: 2px;
+        }
+      }
+    }
+  }
+}
