@@ -11,6 +11,8 @@ import HomePage from "./pages/HomePage/HomePage";
 import Question from "./components/MultiGame/PlayTeam/Question";
 import TeamPlayer from "./components/MultiGame/PlayTeam/TeamPlayer";
 
+import JokeRandom from "./pages/JokeRandom/JokeRandom";
+
 const router = createBrowserRouter([
   {
     element: <App />,
@@ -19,6 +21,10 @@ const router = createBrowserRouter([
         path: "/",
 
         element: <HomePage />,
+      },
+      {
+        path: "/jokerandom",
+        element: <JokeRandom />,
       },
       {
         path: "/TeamMember",
