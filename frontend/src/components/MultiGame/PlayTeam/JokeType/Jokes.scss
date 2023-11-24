@@ -1,0 +1,24 @@
+.JokesBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4px;
+  .JokesType {
+    font-size: 36px;
+    margin: 4px;
+  }
+  .JokesJoke {
+    text-align: center;
+    margin: 4px;
+  }
+  .JokesJokeN {
+    display: none;
+  }
+  .JokesAnswer {
+    text-align: center;
+    margin: 4px;
+  }
+  .JokesAnswerN {
+    display: none;
+  }
+}

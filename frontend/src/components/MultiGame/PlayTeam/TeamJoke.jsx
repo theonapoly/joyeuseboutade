@@ -1,28 +1,40 @@
 import "./TeamJoke.scss";
 import PropTypes from "prop-types";
+import Blonde from "./JokeType/Blonde";
+
+import Dev from "./JokeType/Dev";
+import Global from "./JokeType/Global";
 
 function JokeTeam({
   handleClickLessPoint,
   handleClickMorePoint,
   handleClickClose,
+  playerPoint,
 }) {
   return (
     <div className="QuestionTeam">
+      <div className="Counter">{playerPoint}</div>
       <div className="TypeQuestion">
-        <div>Blonde</div>
-        <div>Limite</div>
-        <div>Dark</div>
-        <div>global</div>
+        <Blonde />
+        <Dev />
+        <Global />
+        <Global />
       </div>
-      <div>
-        <button className="Plus" type="button" onClick={handleClickLessPoint}>
-          {" "}
-          v{" "}
-        </button>
+      <div className="TeamJokeButton">
+        <div className="ButtonDiv">
+          <button className="Plus" type="button" onClick={handleClickLessPoint}>
+            {" "}
+            v{" "}
+          </button>
 
-        <button className="Moins" type="button" onClick={handleClickMorePoint}>
-          X
-        </button>
+          <button
+            className="Moins"
+            type="button"
+            onClick={handleClickMorePoint}
+          >
+            X
+          </button>
+        </div>
         <button className="GO" type="button" onClick={handleClickClose}>
           Suivant
         </button>
@@ -34,5 +46,6 @@ JokeTeam.propTypes = {
   handleClickLessPoint: PropTypes.number.isRequired,
   handleClickMorePoint: PropTypes.number.isRequired,
   handleClickClose: PropTypes.bool.isRequired,
+  playerPoint: PropTypes.number.isRequired,
 };
 export default JokeTeam;
