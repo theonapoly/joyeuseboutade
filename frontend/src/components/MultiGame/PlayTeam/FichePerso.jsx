@@ -39,6 +39,7 @@ function FichePerso({ element }) {
             handleClickLessPoint={handleClickLessPoint}
             handleClickMorePoint={handleClickMorePoint}
             handleClickClose={handleClickClose}
+            playerPoint={playerPoint}
           />
         ) : (
           ""

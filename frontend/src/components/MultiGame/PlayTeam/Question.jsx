@@ -54,6 +54,15 @@ function Question() {
 
   return (
     <div className="GlobalStart">
+      <div className="Rules">
+        Les règles : Inscris les participants, puis commence le jeu ! Ensuite, à
+        tour de rôle, cliquez sur vos pseudos. Une page contenant plusieurs
+        blagues s'affichera. Vous pouvez toutes les vérifier, MAIS attention,
+        vous ne pouvez en choisir qu'une ! Lisez votre blague préférée et
+        essayez de faire rire un maximum de personnes ! Si une personne rit,
+        vous gagnez un point, appuyez sur le bouton 'Validé' ! Sinon, vous
+        perdez un point et vous devez appuyer sur le bouton 'Échec' !
+      </div>
       <input
         value={valeur}
         className="PseudoButton"
