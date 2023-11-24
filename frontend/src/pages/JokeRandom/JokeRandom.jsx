@@ -45,19 +45,43 @@ function JokeRandom() {
 
   console.log(btnData);
 
+  // -------------- ISCLICKED --------------
+
+  const [buttonState, setButtonState] = useState(false);
+  console.log(buttonState);
+
+  const handleClickButton = () => {
+    setButtonState((prevState) => !prevState);
+  };
+
   return (
     <div className="main-jokerandom">
       <div className="section-jokerandom">
-        <img src={MiniGame} alt="mini-jeux" />
-        <div className="mini-game-jokerandom">
+        <button className="btn-logo-container" to="/">
+          <img
+            className="btn-logo-img"
+            src={MiniGame}
+            alt="logo-mini-jeux"
+            onClick={handleClickButton}
+          />
+        </button>
+        {/* --------- */}
+
+        <div
+          className={`mini-game-jokerandom ${
+            buttonState ? "displayOn" : "displayOff"
+          }`}
+        >
           <h1>Mini-jeux</h1>
-          <Link to="/">
-            <div className="duel-mini-game">Le duel</div>
+          <Link className="duel-mini-game" to="/">
+            <p>Le duel</p>
           </Link>
-          <Link to="/">
-            <div className="teamjoke-mini-game">Blagues en équipe</div>
+          <Link className="teamjoke-mini-game" to="/TeamMember">
+            <p>Blagues en équipe</p>
           </Link>
         </div>
+
+        {/* --------- */}
         <div className="question-jokerandom">
           {btnData ? (
             <p>{btnData && btnData.joke}</p>

@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import HomePage from "./pages/HomePage/HomePage";
+import TeamMember from "./components/MultiGame/PlayTeam/TeamPlayer";
 import JokeRandom from "./pages/JokeRandom/JokeRandom";
 
 const router = createBrowserRouter([
@@ -15,11 +16,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+
         element: <HomePage />,
       },
       {
         path: "/jokerandom",
         element: <JokeRandom />,
+      },
+      {
+        path: "/TeamMember",
+        element: <TeamMember />,
       },
     ],
   },
