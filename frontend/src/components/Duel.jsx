@@ -34,9 +34,9 @@ function Duel() {
 
       <h1 className="regle">Règle de jeux</h1>
       <h3>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis porro
-        consequuntur possimus fugiat quos omnis exercitationem laboriosam in at
-        animi.
+        Jeu de non-rire : Un joueur pose une question drôle, l'autre tente de
+        rester sérieux. Rire coûte un point. Celui avec le plus de points gagne
+        à la fin.
       </h3>
 
       <br />
