@@ -3,7 +3,7 @@
 import "./JokeRandom.scss";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import MiniGame from "../../assets/mini-game.svg";
+import DiceGame from "../../assets/game.svg";
 
 function JokeRandom() {
   const [jokesData, setJokesData] = useState();
@@ -60,7 +60,7 @@ function JokeRandom() {
         <button className="btn-logo-container" to="/">
           <img
             className="btn-logo-img"
-            src={MiniGame}
+            src={DiceGame}
             alt="logo-mini-jeux"
             onClick={handleClickButton}
           />
@@ -72,7 +72,7 @@ function JokeRandom() {
             buttonState ? "displayOn" : "displayOff"
           }`}
         >
-          <h1>Mini-jeux</h1>
+          <h1>. Mini-jeux .</h1>
           <Link className="duel-mini-game" to="/">
             <p>Le duel</p>
           </Link>
@@ -102,7 +102,7 @@ function JokeRandom() {
             type="button"
             onClick={handleClickBtn}
           >
-            Une autre
+            Une autre !
           </button>
         </div>
       </div>
