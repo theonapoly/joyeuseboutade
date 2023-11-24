@@ -76,7 +76,7 @@ function JokeRandom() {
           }`}
         >
           <h1>. Mini-jeux .</h1>
-          <Link className="duel-mini-game" to="/">
+          <Link className="duel-mini-game" to="/Duel">
             <p>Le duel</p>
           </Link>
           <Link className="teamjoke-mini-game" to="/TeamMember">
