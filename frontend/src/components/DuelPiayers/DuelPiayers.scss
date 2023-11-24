@@ -1,0 +1,80 @@
+.DuelPiayers {
+  h1 {
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
+  h3 {
+    font-size: clamp(0.6rem, 1.2vw, 1rem);
+  }
+  position: absolute;
+  background-color: rgb(240, 229, 229);
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  ul {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    li {
+      width: 10%;
+      .live3 {
+        width: 90%;
+        height: 4px;
+        border: 1px solid black;
+        background-color: green;
+      }
+      .live2 {
+        width: 90%;
+        height: 4px;
+        border: 1px solid black;
+        background-color: white;
+
+        .live2-anterieur {
+          width: 60%;
+          height: 4px;
+          border: 1px solid black;
+          background-color: yellow;
+        }
+      }
+      .live1 {
+        width: 90%;
+        height: 4px;
+        border: 1px solid black;
+        background-color: white;
+        .live1-anterieur {
+          width: 30%;
+          height: 4px;
+          border: 1px solid black;
+          background-color: red;
+        }
+      }
+      .live0 {
+        width: 90%;
+        height: 4px;
+        border: 1px solid black;
+        background-color: white;
+      }
+
+      h3 {
+        text-transform: capitalize;
+        text-align: center;
+      }
+    }
+  }
+  .deux-joueurs {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  h1 {
+    text-align: center;
+  }
+  .buton {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

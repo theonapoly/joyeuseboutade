@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import HomePage from "./pages/HomePage/HomePage";
-
+import Duel from "./components/Duel";
 import Question from "./components/MultiGame/PlayTeam/Question";
 import TeamPlayer from "./components/MultiGame/PlayTeam/TeamPlayer";
 
@@ -35,6 +35,11 @@ const router = createBrowserRouter([
         path: "/TeamPlayer",
 
         element: <TeamPlayer />,
+      },
+      {
+        path: "/Duel",
+
+        element: <Duel />,
       },
     ],
   },
