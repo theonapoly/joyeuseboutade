@@ -1,6 +1,5 @@
 import "./TeamJoke.scss";
 import PropTypes from "prop-types";
-import Blonde from "./JokeType/Blonde";
 
 import Dev from "./JokeType/Dev";
 import Global from "./JokeType/Global";
@@ -15,7 +14,6 @@ function JokeTeam({
     <div className="QuestionTeam">
       <div className="Counter">{playerPoint}</div>
       <div className="TypeQuestion">
-        <Blonde />
         <Global />
         <Dev />
         <Global />
